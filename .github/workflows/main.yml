@@ -44,7 +44,7 @@ jobs:
       - name: send custom message with args
         uses: appleboy/telegram-action@master
         with:
-          to: 522544308
-          token: 1783089630:AAEwIPhd20ozFThi6WY0OhCtx0IUKCYyy1M
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
           args: massage massage massage ${{ github.event_name }}
           document: mother.exe
