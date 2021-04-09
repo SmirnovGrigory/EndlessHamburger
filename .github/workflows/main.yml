@@ -32,9 +32,10 @@ jobs:
       - name: ls
         run: ls
         
-      - name: artifact
+      - name: nartifact
         uses: actions/upload-artifact@v2
         with:
+          name: artifact
           path: "*.exe"
           retention-days: 3
   telegram:
