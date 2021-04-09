@@ -32,7 +32,7 @@ jobs:
       - name: ls
         run: ls
         
-      - name: 'Upload Artifact'
+      - name: artifact
         uses: actions/upload-artifact@v2
         with:
           path: "*.exe"
@@ -41,6 +41,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download
+        with:
+          name: artifact
+      
       - uses: actions/checkout@master
       - name: send custom message with args
         uses: appleboy/telegram-action@master
