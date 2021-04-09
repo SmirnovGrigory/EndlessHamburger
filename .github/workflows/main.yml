@@ -48,4 +48,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           args: massage massage massage ${{ github.event_name }}
-          document: mother.exe
+          document: "*.exe"
