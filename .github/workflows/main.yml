@@ -27,6 +27,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: build
-        run: cl /EHsc EndlessHamburger.c
+        run: cl /EHsc EndlessHamburger.cpp
       - name: ls
         run: ls
