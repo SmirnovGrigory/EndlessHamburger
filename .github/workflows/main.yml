@@ -55,4 +55,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: ✅
-          document: MotherOfWorld.exe
+          document: artifact/MotherOfWorld.exe
